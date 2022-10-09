@@ -2,7 +2,11 @@ package com.example.javadevcoursefx.datamodel;
 
 import java.time.LocalDate;
 
+/**
+ * Created by timbuchalka on 17/04/2016.
+ */
 public class TodoItem {
+
     private String shortDescription;
     private String details;
     private LocalDate deadline;
@@ -15,11 +19,6 @@ public class TodoItem {
 
     public String getShortDescription() {
         return shortDescription;
-    }
-
-    @Override
-    public String toString() {
-        return this.shortDescription;
     }
 
     public void setShortDescription(String shortDescription) {
@@ -41,4 +40,9 @@ public class TodoItem {
     public void setDeadline(LocalDate deadline) {
         this.deadline = deadline;
     }
+
+//    @Override
+//    public String toString() {
+//        return shortDescription;
+//    }
 }
